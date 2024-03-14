@@ -1,0 +1,35 @@
+/* public/style.css */
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  overflow: hidden;
+  width: calc(33.33% - 20px); /* Kartların genişliği ve kenar boşlukları */
+  float: left; /* Kartları yan yana sıralamak için */
+}
+
+.card:nth-child(3n + 1) {
+  clear: left;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-summary {
+  margin-top: 0;
+}

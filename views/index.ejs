@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite British TV Show</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body id="body">
+
+    <h1 id="tv-show">Favorite British TV Show</h1>
+    <div class="tv-show">
+        <h2>
+            <%= tvShow.title %>
+        </h2>
+        <img src="<%= tvShow.poster %>" alt="<%= tvShow.title %> Poster">
+        <p>Seasons: <%= tvShow.seasons %>
+        </p>
+        <p>Episodes: <%= tvShow.episodes %>
+        </p>
+        <p>Year: <%= tvShow.year %>
+        </p>
+        <p>Cast: <%= tvShow.cast.join(', ') %></p>
+        <p>Type: <%= tvShow.type %></p>
+        <p>Rating: <%= tvShow.rating %></p>
+        <p>Directors: <%= tvShow.directors.join(' , ') %></p>
+    </div>
+
+    <button id="showEpisodesButton">Show Episodes</button>
+    <button id="backButton" style="display: none;">Back</button>
+    <div id="main-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
